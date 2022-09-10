@@ -17,6 +17,8 @@
 		18330EC7289E26FB00549E96 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18330EC6289E26FB00549E96 /* Model.swift */; };
 		18330EC9289E3A9400549E96 /* MyFirstSwiftUICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18330EC8289E3A9400549E96 /* MyFirstSwiftUICell.swift */; };
 		187F7A8028AA7FCD00A053CF /* UserInteractionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F7A7F28AA7FCC00A053CF /* UserInteractionCell.swift */; };
+		18ABA49C28C6210400177E59 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ABA49B28C6210400177E59 /* TodoListViewController.swift */; };
+		18ABA49E28C6211C00177E59 /* TodoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ABA49D28C6211C00177E59 /* TodoListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		18330EC6289E26FB00549E96 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		18330EC8289E3A9400549E96 /* MyFirstSwiftUICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstSwiftUICell.swift; sourceTree = "<group>"; };
 		187F7A7F28AA7FCC00A053CF /* UserInteractionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractionCell.swift; sourceTree = "<group>"; };
+		18ABA49B28C6210400177E59 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		18ABA49D28C6211C00177E59 /* TodoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			children = (
 				18330EC3289E233A00549E96 /* SwiftUI Custom Cell */,
 				18074DFD28A7E25200FDA40A /* Handle User Interactions */,
+				18ABA49A28C6204400177E59 /* Data Flow */,
 				18330EAE289E22D200549E96 /* AppDelegate.swift */,
 				18330EB0289E22D200549E96 /* SceneDelegate.swift */,
 				18330EC6289E26FB00549E96 /* Model.swift */,
@@ -93,6 +98,15 @@
 				18330EC8289E3A9400549E96 /* MyFirstSwiftUICell.swift */,
 			);
 			path = "SwiftUI Custom Cell";
+			sourceTree = "<group>";
+		};
+		18ABA49A28C6204400177E59 /* Data Flow */ = {
+			isa = PBXGroup;
+			children = (
+				18ABA49B28C6210400177E59 /* TodoListViewController.swift */,
+				18ABA49D28C6211C00177E59 /* TodoListCell.swift */,
+			);
+			path = "Data Flow";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18ABA49C28C6210400177E59 /* TodoListViewController.swift in Sources */,
 				18074DFF28A7E27E00FDA40A /* UserInteractionViewController.swift in Sources */,
 				18330EC5289E251300549E96 /* SwiftUICustomCellViewController.swift in Sources */,
 				18330EAF289E22D200549E96 /* AppDelegate.swift in Sources */,
+				18ABA49E28C6211C00177E59 /* TodoListCell.swift in Sources */,
 				18330EB1289E22D200549E96 /* SceneDelegate.swift in Sources */,
 				18330EC9289E3A9400549E96 /* MyFirstSwiftUICell.swift in Sources */,
 				187F7A8028AA7FCD00A053CF /* UserInteractionCell.swift in Sources */,
