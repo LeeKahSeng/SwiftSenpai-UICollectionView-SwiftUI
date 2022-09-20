@@ -79,7 +79,7 @@
 			children = (
 				18330EC3289E233A00549E96 /* SwiftUI Custom Cell */,
 				18074DFD28A7E25200FDA40A /* Handle User Interactions */,
-				18ABA49A28C6204400177E59 /* Data Flow */,
+				18ABA49A28C6204400177E59 /* Refresh Cells Content */,
 				18330EAE289E22D200549E96 /* AppDelegate.swift */,
 				18330EB0289E22D200549E96 /* SceneDelegate.swift */,
 				18330EC6289E26FB00549E96 /* Model.swift */,
@@ -100,13 +100,13 @@
 			path = "SwiftUI Custom Cell";
 			sourceTree = "<group>";
 		};
-		18ABA49A28C6204400177E59 /* Data Flow */ = {
+		18ABA49A28C6204400177E59 /* Refresh Cells Content */ = {
 			isa = PBXGroup;
 			children = (
 				18ABA49B28C6210400177E59 /* TodoListViewController.swift */,
 				18ABA49D28C6211C00177E59 /* TodoListCell.swift */,
 			);
-			path = "Data Flow";
+			path = "Refresh Cells Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
