@@ -23,7 +23,6 @@ class HeaderFooterViewController: UIViewController {
     
     var collectionView: UICollectionView!
     private var symbolCellRegistration: UICollectionView.CellRegistration<UICollectionViewCell, SFSymbolItem>!
-    // ✍🏻: use `UICollectionViewCell`
     private var headerRegistration: UICollectionView.SupplementaryRegistration<UICollectionViewCell>!
     private var footerRegistration: UICollectionView.SupplementaryRegistration<UICollectionViewCell>!
     
@@ -146,7 +145,6 @@ private extension HeaderFooterViewController {
         
         symbolCellRegistration = .init { cell, indexPath, item in
 
-            // ✍🏻: refer old article for more details on `configurationUpdateHandler`
             cell.configurationUpdateHandler = { cell, state in
                 cell.contentConfiguration = UIHostingConfiguration {
                     
@@ -168,6 +166,7 @@ private extension HeaderFooterViewController {
     }
     
     private func performHeaderRegistration() {
+        
         headerRegistration = .init(elementKind: UICollectionView.elementKindSectionHeader) { [unowned self]
             (header, elementKind, indexPath) in
             
@@ -180,7 +179,7 @@ private extension HeaderFooterViewController {
     }
     
     private func performFooterRegistration() {
-        // ✍🏻: Almost same as header, just `elementKindSectionFooter` is different
+        
         footerRegistration = .init(elementKind: UICollectionView.elementKindSectionFooter) { [unowned self]
             (footer, elementKind, indexPath) in
             
@@ -188,11 +187,6 @@ private extension HeaderFooterViewController {
 
             footer.contentConfiguration = UIHostingConfiguration {
                 FooterView(section: symbolSection)
-//                Text("Nothing is selected")
-//                // ✍🏻: Set height here
-//                    .frame(height: 30)
-//                    .frame(maxWidth: .infinity)
-//                    .background(.blue)
             }
         }
     }
@@ -219,7 +213,6 @@ extension HeaderFooterViewController: UICollectionViewDataSource {
         return cell
     }
     
-    // ✍🏻: dequeue sup view is important
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         switch kind {
