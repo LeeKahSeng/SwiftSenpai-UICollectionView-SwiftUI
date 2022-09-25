@@ -17,8 +17,11 @@
 		18330EC7289E26FB00549E96 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18330EC6289E26FB00549E96 /* Model.swift */; };
 		18330EC9289E3A9400549E96 /* MyFirstSwiftUICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18330EC8289E3A9400549E96 /* MyFirstSwiftUICell.swift */; };
 		187F7A8028AA7FCD00A053CF /* UserInteractionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F7A7F28AA7FCC00A053CF /* UserInteractionCell.swift */; };
+		1890316728DB3BF500004F0F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890316628DB3BF400004F0F /* HeaderView.swift */; };
+		1890316928DB47DA00004F0F /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890316828DB47DA00004F0F /* FooterView.swift */; };
 		18ABA49C28C6210400177E59 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ABA49B28C6210400177E59 /* TodoListViewController.swift */; };
 		18ABA49E28C6211C00177E59 /* TodoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ABA49D28C6211C00177E59 /* TodoListCell.swift */; };
+		18E05B4B28D9FB0800F0C78F /* HeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E05B4A28D9FB0800F0C78F /* HeaderFooterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +37,11 @@
 		18330EC6289E26FB00549E96 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		18330EC8289E3A9400549E96 /* MyFirstSwiftUICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstSwiftUICell.swift; sourceTree = "<group>"; };
 		187F7A7F28AA7FCC00A053CF /* UserInteractionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractionCell.swift; sourceTree = "<group>"; };
+		1890316628DB3BF400004F0F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		1890316828DB47DA00004F0F /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		18ABA49B28C6210400177E59 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		18ABA49D28C6211C00177E59 /* TodoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListCell.swift; sourceTree = "<group>"; };
+		18E05B4A28D9FB0800F0C78F /* HeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderFooterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 				18330EC3289E233A00549E96 /* SwiftUI Custom Cell */,
 				18074DFD28A7E25200FDA40A /* Handle User Interactions */,
 				18ABA49A28C6204400177E59 /* Refresh Cells Content */,
+				1893109028D9F42C008BD5F4 /* Custom Header & Footer */,
 				18330EAE289E22D200549E96 /* AppDelegate.swift */,
 				18330EB0289E22D200549E96 /* SceneDelegate.swift */,
 				18330EC6289E26FB00549E96 /* Model.swift */,
@@ -98,6 +105,16 @@
 				18330EC8289E3A9400549E96 /* MyFirstSwiftUICell.swift */,
 			);
 			path = "SwiftUI Custom Cell";
+			sourceTree = "<group>";
+		};
+		1893109028D9F42C008BD5F4 /* Custom Header & Footer */ = {
+			isa = PBXGroup;
+			children = (
+				18E05B4A28D9FB0800F0C78F /* HeaderFooterViewController.swift */,
+				1890316628DB3BF400004F0F /* HeaderView.swift */,
+				1890316828DB47DA00004F0F /* FooterView.swift */,
+			);
+			path = "Custom Header & Footer";
 			sourceTree = "<group>";
 		};
 		18ABA49A28C6204400177E59 /* Refresh Cells Content */ = {
@@ -182,11 +199,14 @@
 			files = (
 				18ABA49C28C6210400177E59 /* TodoListViewController.swift in Sources */,
 				18074DFF28A7E27E00FDA40A /* UserInteractionViewController.swift in Sources */,
+				18E05B4B28D9FB0800F0C78F /* HeaderFooterViewController.swift in Sources */,
 				18330EC5289E251300549E96 /* SwiftUICustomCellViewController.swift in Sources */,
 				18330EAF289E22D200549E96 /* AppDelegate.swift in Sources */,
 				18ABA49E28C6211C00177E59 /* TodoListCell.swift in Sources */,
 				18330EB1289E22D200549E96 /* SceneDelegate.swift in Sources */,
+				1890316728DB3BF500004F0F /* HeaderView.swift in Sources */,
 				18330EC9289E3A9400549E96 /* MyFirstSwiftUICell.swift in Sources */,
+				1890316928DB47DA00004F0F /* FooterView.swift in Sources */,
 				187F7A8028AA7FCD00A053CF /* UserInteractionCell.swift in Sources */,
 				18330EC7289E26FB00549E96 /* Model.swift in Sources */,
 			);
