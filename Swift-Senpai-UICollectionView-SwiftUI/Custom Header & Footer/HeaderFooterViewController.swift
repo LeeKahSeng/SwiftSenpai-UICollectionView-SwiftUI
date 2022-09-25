@@ -171,7 +171,7 @@ private extension HeaderFooterViewController {
             (header, elementKind, indexPath) in
             
             let symbolSection = dataModel[indexPath.section]
-
+            
             header.contentConfiguration = UIHostingConfiguration {
                 HeaderView(section: symbolSection)
             }
@@ -184,7 +184,7 @@ private extension HeaderFooterViewController {
             (footer, elementKind, indexPath) in
             
             let symbolSection = dataModel[indexPath.section]
-
+            
             footer.contentConfiguration = UIHostingConfiguration {
                 FooterView(section: symbolSection)
             }
@@ -213,10 +213,13 @@ extension HeaderFooterViewController: UICollectionViewDataSource {
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+    func collectionView(_ collectionView: UICollectionView,
+                        viewForSupplementaryElementOfKind elementKind: String,
+                        at indexPath: IndexPath) -> UICollectionReusableView {
         
-        switch kind {
+        switch elementKind {
         case UICollectionView.elementKindSectionHeader:
+            // Dequeue header view
             let header = collectionView.dequeueConfiguredReusableSupplementary(
                 using: headerRegistration,
                 for: indexPath
@@ -224,6 +227,7 @@ extension HeaderFooterViewController: UICollectionViewDataSource {
             return header
             
         case UICollectionView.elementKindSectionFooter:
+            // Dequeue footer view
             let footer = collectionView.dequeueConfiguredReusableSupplementary(
                 using: footerRegistration,
                 for: indexPath
@@ -233,7 +237,6 @@ extension HeaderFooterViewController: UICollectionViewDataSource {
         default:
             fatalError("Unexpected element kind")
         }
-
     }
 }
 
