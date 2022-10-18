@@ -23,18 +23,10 @@ struct DataProvider {
         Quote(symbol: "snowflake", content: "Walking on water and developing software from a specification are easy if both are frozen.", author: "Edward V. Berard"),
     ]
     
-    /// Dummy data needed for placeholder cells
-    static let dummyData = [
-        Quote(symbol: "iphone", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", author: "Author name"),
-        Quote(symbol: "iphone", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", author: "Author name"),
-        Quote(symbol: "iphone", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", author: "Author name"),
-        Quote(symbol: "iphone", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", author: "Author name"),
-    ]
-    
     /// Simulate fetching data from a remote server
     static func fetchData() async -> [Quote] {
         
-        // Sleep for 2s to simulate a wait when fetching data
+        // Sleep for 2s to simulate a wait when fetching data from remote server
         try? await Task.sleep(nanoseconds: 2 * 1_000_000_000)
         
         // return `serverData` shuffled

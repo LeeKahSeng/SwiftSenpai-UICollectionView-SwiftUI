@@ -13,8 +13,10 @@ struct PlaceholderModifier: ViewModifier {
     
     func body(content: Content) -> some View {
         if isPlaceholder {
+            // Apply a redaction to current view
             content.redacted(reason: .placeholder)
         } else {
+            // Do not apply any redaction to current view
             content
         }
     }

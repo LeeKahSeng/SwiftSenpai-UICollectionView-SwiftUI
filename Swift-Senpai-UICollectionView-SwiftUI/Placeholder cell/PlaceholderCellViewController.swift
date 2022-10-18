@@ -16,13 +16,22 @@ struct Quote {
 
 class PlaceholderCellViewController: UIViewController {
 
-    /// Data to show on screen
-    private var onScreenData = [Quote]()
+    /// Data to show in collection view
+    private var collectionViewData = [Quote]()
     
     private var collectionView: UICollectionView!
     private var quoteCellRegistration: UICollectionView.CellRegistration<UICollectionViewCell, Quote>!
     private let refreshControl = UIRefreshControl()
     private var isLoading = true
+    
+    /// Dummy data needed for placeholder cells
+    /// Note: The content of `Quote` is not important, we just need some text to generate the placeholder UI.
+    let dummyData = [
+        Quote(symbol: "iphone", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", author: "Author name"),
+        Quote(symbol: "iphone", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", author: "Author name"),
+        Quote(symbol: "iphone", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", author: "Author name"),
+        Quote(symbol: "iphone", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", author: "Author name"),
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,29 +56,29 @@ class PlaceholderCellViewController: UIViewController {
         view = collectionView
         
         // Setup refresh control
-        refreshControl.addTarget(self, action: #selector(performReload), for: .valueChanged)
+        refreshControl.addTarget(self, action: #selector(performPullToRefresh), for: .valueChanged)
         collectionView.addSubview(refreshControl)
         
         // Fetch data from data provider
-        performReload()
+        performPullToRefresh()
     }
     
-    @objc func performReload() {
+    @objc func performPullToRefresh() {
         
-        isLoading = true
         refreshControl.beginRefreshing()
         
         // Load the collection view with dummy data
-        onScreenData = DataProvider.dummyData
+        isLoading = true
+        collectionViewData = dummyData
         collectionView.reloadData()
         
         Task {
             // Load the collection view with data from data provider
-            onScreenData = await DataProvider.fetchData()
+            collectionViewData = await DataProvider.fetchData()
             collectionView.reloadData()
+            isLoading = false
             
             refreshControl.endRefreshing()
-            isLoading = false
         }
     }
 
@@ -79,12 +88,12 @@ class PlaceholderCellViewController: UIViewController {
 extension PlaceholderCellViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return onScreenData.count
+        return collectionViewData.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        let item = onScreenData[indexPath.row]
+        let item = collectionViewData[indexPath.row]
         let cell = collectionView.dequeueConfiguredReusableCell(
             using: quoteCellRegistration,
             for: indexPath,
