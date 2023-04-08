@@ -119,6 +119,31 @@
                                             <segue destination="C88-Yk-dPn" kind="show" id="YOA-Ul-8Y8"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="CBo-vB-ahm">
+                                        <rect key="frame" x="0.0" y="222.66666412353516" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CBo-vB-ahm" id="8nF-S9-BJy">
+                                            <rect key="frame" x="0.0" y="0.0" width="359.66666666666669" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHK-K3-csp">
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="331.66666666666669" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qHK-K3-csp" firstAttribute="leading" secondItem="8nF-S9-BJy" secondAttribute="leadingMargin" id="9er-3O-b74"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="qHK-K3-csp" secondAttribute="trailing" id="BWv-tM-z8u"/>
+                                                <constraint firstItem="qHK-K3-csp" firstAttribute="top" secondItem="8nF-S9-BJy" secondAttribute="topMargin" id="FMQ-pY-GDf"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="qHK-K3-csp" secondAttribute="bottom" id="sYo-Fc-hxZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Zs4-dj-rJ7" kind="show" id="NyI-Xy-acs"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -147,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="reT-ya-NGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1755" y="-190"/>
+            <point key="canvasLocation" x="1814" y="-1161"/>
         </scene>
         <!--Todo List View Controller-->
         <scene sceneID="P4s-cR-a30">
@@ -163,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mt-Br-E0Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1754" y="486"/>
+            <point key="canvasLocation" x="1814" y="-441"/>
         </scene>
         <!--Header Footer View Controller-->
         <scene sceneID="ymp-HQ-9YB">
@@ -179,7 +204,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8EY-wp-Yo4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="308"/>
+            <point key="canvasLocation" x="1814" y="267"/>
+        </scene>
+        <!--Placeholder Cell View Controller-->
+        <scene sceneID="8qs-YI-8wW">
+            <objects>
+                <viewController id="Zs4-dj-rJ7" customClass="PlaceholderCellViewController" customModule="Swift_Senpai_UICollectionView_SwiftUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H7e-Qv-qJp">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nyH-OG-NWP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zwX-JP-lUk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9pu-re-TNb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851" y="255"/>
         </scene>
         <!--SwiftUI Custom Cell View Controller-->
         <scene sceneID="k8W-qD-y5c">
@@ -195,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Nd-JL-vnl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1752" y="-839"/>
+            <point key="canvasLocation" x="1815" y="-1932"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gaB-zy-8R4">
