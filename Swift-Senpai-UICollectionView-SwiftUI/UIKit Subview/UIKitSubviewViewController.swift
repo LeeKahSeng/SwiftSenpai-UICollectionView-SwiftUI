@@ -23,9 +23,10 @@ class UIKitSubviewViewController: UIViewController {
         // Configure `agreementView`
         let agreementView = AgreementView()
         checkbox.switchButtonValueDidChanged = { (_, isSelected) in
+            // Update `agreementView` check status
             agreementView.setIsChecked(isSelected)
         }
-
+        
         // Convert `agreementView` to UIView
         let config = UIHostingConfiguration {
             agreementView
@@ -34,6 +35,7 @@ class UIKitSubviewViewController: UIViewController {
         
         // Add `agreementView` into a container view
         textContainerView.addSubview(subview)
+        
         textContainerView.translatesAutoresizingMaskIntoConstraints = false
         subview.translatesAutoresizingMaskIntoConstraints = false
         

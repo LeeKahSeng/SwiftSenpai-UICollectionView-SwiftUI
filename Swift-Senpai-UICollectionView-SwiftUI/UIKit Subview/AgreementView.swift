@@ -24,7 +24,7 @@ struct AgreementView: View {
             .font(.system(size: fontSize))
             .bold(isBold)
             .onReceive(currentViewState.$isChecked) { checked in
-                // Animate based on the check status
+                // Animate based on the `isCheck` state
                 withAnimation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 1)) {
                     fontSize = checked ? 18.0 : 16.0
                     isBold = checked
@@ -34,7 +34,7 @@ struct AgreementView: View {
     }
     
     func setIsChecked(_ isChecked: Bool) {
-        // Update current check status
+        // Update current `isCheck` state
         currentViewState.isChecked = isChecked
     }
 }
