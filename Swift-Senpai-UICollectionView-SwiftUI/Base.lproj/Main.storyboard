@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="guV-LJ-VhW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="guV-LJ-VhW">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -144,6 +145,31 @@
                                             <segue destination="Zs4-dj-rJ7" kind="show" id="NyI-Xy-acs"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="ref-84-R94">
+                                        <rect key="frame" x="0.0" y="266.33333206176758" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ref-84-R94" id="1QD-so-1vm">
+                                            <rect key="frame" x="0.0" y="0.0" width="359.66666666666669" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIKit Subview using SwiftUI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ps5-c4-nHw">
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="331.66666666666669" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ps5-c4-nHw" firstAttribute="leading" secondItem="1QD-so-1vm" secondAttribute="leadingMargin" id="Bs5-2e-Guq"/>
+                                                <constraint firstItem="ps5-c4-nHw" firstAttribute="top" secondItem="1QD-so-1vm" secondAttribute="topMargin" id="TJe-Ns-oSe"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ps5-c4-nHw" secondAttribute="trailing" id="XtT-Vk-6Mn"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ps5-c4-nHw" secondAttribute="bottom" id="r84-lW-k8l"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5eP-er-TAb" kind="show" id="Qt1-1T-dGW"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -205,6 +231,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8EY-wp-Yo4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1814" y="267"/>
+        </scene>
+        <!--UIKit Subview using SwiftUI-->
+        <scene sceneID="54T-9x-hA5">
+            <objects>
+                <viewController title="UIKit Subview using SwiftUI" id="5eP-er-TAb" customClass="UIKitSubviewViewController" customModule="Swift_Senpai_UICollectionView_SwiftUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RxG-AG-tK6">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8R-zE-oCE" customClass="KSSwitchButton" customModule="Swift_Senpai_UICollectionView_SwiftUI" customModuleProvider="target">
+                                <rect key="frame" x="16" y="121" width="30" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="afv-0E-wzl"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nbz-Gu-Pow">
+                                <rect key="frame" x="46" y="121" width="328" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="8II-v2-hwB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="j8X-hN-gcv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="j8X-hN-gcv" firstAttribute="trailing" secondItem="Nbz-Gu-Pow" secondAttribute="trailing" constant="16" id="0Jh-st-Uxc"/>
+                            <constraint firstItem="d8R-zE-oCE" firstAttribute="top" secondItem="j8X-hN-gcv" secondAttribute="top" constant="30" id="37b-F1-7Fr"/>
+                            <constraint firstItem="Nbz-Gu-Pow" firstAttribute="top" secondItem="d8R-zE-oCE" secondAttribute="top" id="VCI-uI-M6Q"/>
+                            <constraint firstItem="d8R-zE-oCE" firstAttribute="leading" secondItem="j8X-hN-gcv" secondAttribute="leading" constant="16" id="Xus-2q-Ac7"/>
+                            <constraint firstItem="Nbz-Gu-Pow" firstAttribute="top" secondItem="j8X-hN-gcv" secondAttribute="top" constant="30" id="bFf-0t-axQ"/>
+                            <constraint firstItem="Nbz-Gu-Pow" firstAttribute="leading" secondItem="d8R-zE-oCE" secondAttribute="trailing" id="dol-fg-t92"/>
+                            <constraint firstItem="Nbz-Gu-Pow" firstAttribute="bottom" secondItem="d8R-zE-oCE" secondAttribute="bottom" id="qR3-t8-50v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fi2-qU-Fww"/>
+                    <connections>
+                        <outlet property="checkbox" destination="d8R-zE-oCE" id="Vfo-ZA-Whe"/>
+                        <outlet property="textContainerView" destination="Nbz-Gu-Pow" id="rtG-Gf-SrV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLx-uQ-up7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15.384615384615383" y="254.50236966824644"/>
         </scene>
         <!--Placeholder Cell View Controller-->
         <scene sceneID="8qs-YI-8wW">

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		18074DFF28A7E27E00FDA40A /* UserInteractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18074DFE28A7E27E00FDA40A /* UserInteractionViewController.swift */; };
+		1815100729E167FE00392345 /* UIKitSubviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815100629E167FE00392345 /* UIKitSubviewViewController.swift */; };
+		1815100929E168BF00392345 /* KSSwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815100829E168BF00392345 /* KSSwitchButton.swift */; };
 		18330EAF289E22D200549E96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18330EAE289E22D200549E96 /* AppDelegate.swift */; };
 		18330EB1289E22D200549E96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18330EB0289E22D200549E96 /* SceneDelegate.swift */; };
 		18330EB6289E22D200549E96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18330EB4289E22D200549E96 /* Main.storyboard */; };
@@ -16,6 +18,7 @@
 		18330EC5289E251300549E96 /* SwiftUICustomCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18330EC4289E251300549E96 /* SwiftUICustomCellViewController.swift */; };
 		18330EC7289E26FB00549E96 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18330EC6289E26FB00549E96 /* Model.swift */; };
 		18330EC9289E3A9400549E96 /* MyFirstSwiftUICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18330EC8289E3A9400549E96 /* MyFirstSwiftUICell.swift */; };
+		1874FD4729E2CE1D00747876 /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874FD4629E2CE1D00747876 /* AgreementView.swift */; };
 		187F7A8028AA7FCD00A053CF /* UserInteractionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F7A7F28AA7FCC00A053CF /* UserInteractionCell.swift */; };
 		1890316728DB3BF500004F0F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890316628DB3BF400004F0F /* HeaderView.swift */; };
 		1890316928DB47DA00004F0F /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890316828DB47DA00004F0F /* FooterView.swift */; };
@@ -30,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		18074DFE28A7E27E00FDA40A /* UserInteractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractionViewController.swift; sourceTree = "<group>"; };
+		1815100629E167FE00392345 /* UIKitSubviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitSubviewViewController.swift; sourceTree = "<group>"; };
+		1815100829E168BF00392345 /* KSSwitchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSSwitchButton.swift; sourceTree = "<group>"; };
 		18330EAB289E22D200549E96 /* Swift-Senpai-UICollectionView-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Senpai-UICollectionView-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18330EAE289E22D200549E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18330EB0289E22D200549E96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +45,7 @@
 		18330EC4289E251300549E96 /* SwiftUICustomCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICustomCellViewController.swift; sourceTree = "<group>"; };
 		18330EC6289E26FB00549E96 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		18330EC8289E3A9400549E96 /* MyFirstSwiftUICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstSwiftUICell.swift; sourceTree = "<group>"; };
+		1874FD4629E2CE1D00747876 /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
 		187F7A7F28AA7FCC00A053CF /* UserInteractionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractionCell.swift; sourceTree = "<group>"; };
 		1890316628DB3BF400004F0F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		1890316828DB47DA00004F0F /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
@@ -72,6 +78,23 @@
 			path = "Handle User Interactions";
 			sourceTree = "<group>";
 		};
+		1815100529E167D500392345 /* UIKit Subview */ = {
+			isa = PBXGroup;
+			children = (
+				1815100629E167FE00392345 /* UIKitSubviewViewController.swift */,
+				1874FD4629E2CE1D00747876 /* AgreementView.swift */,
+				1815100829E168BF00392345 /* KSSwitchButton.swift */,
+			);
+			path = "UIKit Subview";
+			sourceTree = "<group>";
+		};
+		1815100A29E198B600392345 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		18330EA2289E22D200549E96 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +119,7 @@
 				18ABA49A28C6204400177E59 /* Refresh Cells Content */,
 				1893109028D9F42C008BD5F4 /* Custom Header & Footer */,
 				18A4A99228F453D1008B1D20 /* Placeholder cell */,
+				1815100529E167D500392345 /* UIKit Subview */,
 				18330EAE289E22D200549E96 /* AppDelegate.swift */,
 				18330EB0289E22D200549E96 /* SceneDelegate.swift */,
 				18330EC6289E26FB00549E96 /* Model.swift */,
@@ -110,6 +134,7 @@
 		18330EC3289E233A00549E96 /* SwiftUI Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
+				1815100A29E198B600392345 /* SwiftUI */,
 				18330EC4289E251300549E96 /* SwiftUICustomCellViewController.swift */,
 				18330EC8289E3A9400549E96 /* MyFirstSwiftUICell.swift */,
 			);
@@ -220,6 +245,7 @@
 				18ABA49C28C6210400177E59 /* TodoListViewController.swift in Sources */,
 				18A4A99428F4546B008B1D20 /* PlaceholderCellViewController.swift in Sources */,
 				18C059B028FA96D200903BA9 /* DataProvider.swift in Sources */,
+				1815100929E168BF00392345 /* KSSwitchButton.swift in Sources */,
 				18074DFF28A7E27E00FDA40A /* UserInteractionViewController.swift in Sources */,
 				18E05B4B28D9FB0800F0C78F /* HeaderFooterViewController.swift in Sources */,
 				18C059AC28FA932E00903BA9 /* QuoteCell.swift in Sources */,
@@ -229,10 +255,12 @@
 				18ABA49E28C6211C00177E59 /* TodoListCell.swift in Sources */,
 				18330EB1289E22D200549E96 /* SceneDelegate.swift in Sources */,
 				1890316728DB3BF500004F0F /* HeaderView.swift in Sources */,
+				1815100729E167FE00392345 /* UIKitSubviewViewController.swift in Sources */,
 				18330EC9289E3A9400549E96 /* MyFirstSwiftUICell.swift in Sources */,
 				1890316928DB47DA00004F0F /* FooterView.swift in Sources */,
 				187F7A8028AA7FCD00A053CF /* UserInteractionCell.swift in Sources */,
 				18330EC7289E26FB00549E96 /* Model.swift in Sources */,
+				1874FD4729E2CE1D00747876 /* AgreementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
